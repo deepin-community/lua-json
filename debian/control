@@ -1,0 +1,19 @@
+Source: lua-json
+Section: interpreters
+Priority: optional
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Build-Depends: debhelper (>= 8), dh-lua (>= 21)
+Standards-Version: 3.9.6
+Vcs-Git: https://salsa.debian.org/debian/liblua-json.git
+Vcs-Browser: https://salsa.debian.org/debian/liblua-json
+Homepage: http://www.eharning.us/wiki/luajson/
+
+Package: lua-json
+Architecture: all
+Depends: ${misc:Depends}, lua-lpeg
+Replaces: liblua5.1-json (<< 1.2.2-2~)
+Breaks: liblua5.1-json (<< 1.2.2-2~)
+Provides: liblua5.1-json, ${lua:Provides}
+XB-Lua-Versions: ${lua:Versions}
+Description: JSON decoder/encoder for Lua
+ LuaJSON is a customizable JSON decoder/encoder using LPEG for parsing.

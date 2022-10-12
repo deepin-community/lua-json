@@ -1,0 +1,105 @@
+lua-json (1.3.4-2) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 19 May 2022 10:51:00 +0800
+
+lua-json (1.3.4-2) unstable; urgency=medium
+
+  * [06f652f] Migrating the git repo to salsa
+  * [899d394] Add .gitlab-ci.yml
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sat, 02 Feb 2019 19:45:38 +0100
+
+lua-json (1.3.4-1) unstable; urgency=medium
+
+  * [f162566] Update upstream source from tag 'upstream/1.3.4'
+    Update to upstream version '1.3.4'
+    with Debian dir 547a6d91bf0c18b7a75a52cd2bc97e82436f1360
+  * [27f7046] snapshot changelog
+  * [a2ed30d] README was renamed to README.md
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sat, 02 Feb 2019 19:03:36 +0100
+
+lua-json (1.3.3-2) unstable; urgency=medium
+
+  * [59e7e01] Support lua5.3.
+    Thanks to Asbjørn Sloth Tønnesen (Closes: #826988)
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 29 Dec 2016 15:34:34 +0100
+
+lua-json (1.3.3-1) unstable; urgency=medium
+
+  * [9c6f6c1] Fixing watch file.
+  * [4d5dbd3] Merge branch 'upstream'
+  * [b2577e9] Updating standards-version and git fields.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sun, 16 Aug 2015 23:28:10 +0200
+
+lua-json (1.3.2-1) unstable; urgency=medium
+
+  * [25eb09ad] Merge branch 'upstream'
+    Closes: #719519
+    Merging upstream version 1.3.2 which is a bugfix release
+    to make luajson work with lpeg again. It also sets _ENV to nil using local
+    _ENV = nil to avoid global writing.
+    Documentation and tests were updated accordingly and enhanced.
+  * [b2bdecd4] Remove transitional package.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sat, 08 Nov 2014 16:31:39 +0100
+
+lua-json (1.3.1-1) unstable; urgency=medium
+
+  * [3d18e710] Merge tag 'upstream/1.3.1'
+    Upstream version 1.3.1
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 13 Feb 2014 23:46:50 +0100
+
+lua-json (1.3-1) unstable; urgency=low
+
+  * [e90dafec] Changes by Enrico Tassi - thanks for the patch!
+    * Switch to dh-lua
+    * Package renamed according to the new Lua policy
+  * [2f427b4d] Make debian/watch work again.
+  * [6d097344] Merge tag 'upstream/1.3'
+    Upstream version 1.3
+  * [14787062] Enable support for Lua5.2
+  * [1f053906] Use 3.0 (quilt) format as we have symlinks in the debian folder.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sun, 06 May 2012 20:50:32 +0200
+
+lua-json (1.2.2-1) unstable; urgency=low
+
+  * [bb887c07] Merge commit 'upstream/1.2.2'
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 28 Jul 2011 18:07:13 +0200
+
+lua-json (1.2.1-1) unstable; urgency=low
+
+  * [9b2b474a] Fixing filenamemangle in watch file.
+  * [cdacecf3] Merge branch 'upstream'
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 10 Feb 2011 10:34:12 +0100
+
+lua-json (1.1.1-1) unstable; urgency=low
+
+  * New upstream version.
+  * [f05a443c] Merge branch 'upstream'
+  * [e296fdd1] Bumping  Standards-Version to 3.8.4. No changes needed.
+  * [0b8d7f9f] Updating watch file.
+  * [853dd452] src directory was renamed to lua, update debian/install.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Thu, 27 May 2010 09:49:47 +0200
+
+lua-json (0.10-2) unstable; urgency=low
+
+  * [9c816ef8] Depend on liblua5.1-lpeg2 or liblua5.1-lpeg1
+               (Closes: #528548).
+
+ -- Bernd Zeimetz <bzed@debian.org>  Wed, 13 May 2009 18:13:23 +0200
+
+lua-json (0.10-1) unstable; urgency=low
+
+  * Initial release. 
+
+ -- Bernd Zeimetz <bzed@debian.org>  Tue, 09 Dec 2008 22:33:51 +0100

@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/luajson-$1\.tar\.gz/ \
+  https://github.com/harningt/luajson/tags .*/?(\d+\.\d.\d)\.tar\.gz
