@@ -1,0 +1,3 @@
+Test-Command: debian/rules autopkgtest
+Restrictions: allow-stderr, rw-build-tree
+Depends: @, @builddeps@ 

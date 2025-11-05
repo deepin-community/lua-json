@@ -1,8 +1,22 @@
-lua-json (1.3.4-2) UNRELEASED; urgency=medium
+lua-json (1.3.4-4) unstable; urgency=medium
 
-  * update
+  * Team upload
+  * Drop lua5.2 support
 
- -- Bernd Zeimetz <bzed@debian.org>  Thu, 19 May 2022 10:51:00 +0800
+ -- Bastian Germann <bage@debian.org>  Mon, 13 Oct 2025 23:30:23 +0200
+
+lua-json (1.3.4-3) unstable; urgency=medium
+
+  * Move maintenance to lua-team
+  * Fix lua-lpeg compatibility (Closes: #1089506)
+  * Add support for lua5.4
+  * d/copyright: convert to 1.0 format
+  * d/tests: run autopkgtest
+  * B-D debhelper-compat 13, Standards-Version 4.7.0
+  * B-D lua-lpeg for tests
+  * d/watch: version 4
+
+ -- Jérémy Lal <kapouer@melix.org>  Thu, 09 Jan 2025 15:59:07 +0100
 
 lua-json (1.3.4-2) unstable; urgency=medium
 
