@@ -1,3 +1,7 @@
-version=3
-opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/luajson-$1\.tar\.gz/ \
-  https://github.com/harningt/luajson/tags .*/?(\d+\.\d.\d)\.tar\.gz
+version=4
+opts=\
+filenamemangle=s%.*/@ANY_VERSION@%@PACKAGE@-$1.tar.gz%,\
+downloadurlmangle=s%(api.github.com/repos/[^/]+/[^/]+)/git/refs/%$1/tarball/refs/%g,\
+searchmode=plain \
+ https://api.github.com/repos/harningt/luajson/git/matching-refs/tags/ \
+ https://api.github.com/repos/[^/]+/[^/]+/git/refs/tags/@ANY_VERSION@

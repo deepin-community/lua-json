@@ -1,11 +1,15 @@
 Source: lua-json
 Section: interpreters
 Priority: optional
-Maintainer: Bernd Zeimetz <bzed@debian.org>
-Build-Depends: debhelper (>= 8), dh-lua (>= 21)
-Standards-Version: 3.9.6
-Vcs-Git: https://salsa.debian.org/debian/liblua-json.git
-Vcs-Browser: https://salsa.debian.org/debian/liblua-json
+Maintainer: The Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-lua,
+ lua-lpeg
+Standards-Version: 4.7.0
+Vcs-Git: https://salsa.debian.org/lua-team/lua-json.git
+Vcs-Browser: https://salsa.debian.org/lua-team/lua-json
 Homepage: http://www.eharning.us/wiki/luajson/
 
 Package: lua-json

@@ -1,4 +1,10 @@
 #!/usr/bin/make -f
 
 %:
-	        dh $@ --buildsystem=lua --with lua
+	dh $@ --buildsystem=lua
+
+execute_before_dh_auto_test:
+	cp debian/tests/lunit.lua tests/
+
+execute_before_dh_auto_clean:
+	rm -f tests/lunit.lua
